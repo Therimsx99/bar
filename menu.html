@@ -4,51 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Calabozo Cervecero - Menú</title>
-    <style>
-    body{
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #00ff00;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        section {
-            padding: 40px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #00ff00;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Descubre el menú de El Calabozo Cervecero, donde encontrarás una selección de cervezas y aperitivos deliciosos.">
+    <meta name="keywords" content="cerveza, menú, aperitivos, El Calabozo Cervecero">
+    <meta name="author" content="El Calabozo Cervecero">
 </head>
 <body>
     <header>
-        <h1>El Calabozo Cervecero - Menú</h1>
+        <div class="header-title">
+            <img src="banner.png" alt="El Calabozo Cervecero">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2>Nuestro Menú</h2>
-        
-		<img src="111.png" alt="Menú del Calabozo Cervecero">
-		<img src="222.png" alt="Menú del Calabozo Cervecero">
-	    <img src="333.png" alt="Menú del Calabozo Cervecero">
-	    <img src="444.png" alt="Menú del Calabozo Cervecero">
-	    <img src="555.png" alt="Menú del Calabozo Cervecero">
-	    
-    </section>
+    <main>
+        <section id="menu">
+            <h2>Nuestro Menú</h2>
+            <p>Explora nuestra selección de cervezas y aperitivos cuidadosamente elaborados para complementar tu experiencia en El Calabozo Cervecero.</p>
+            
+            <div class="menu-items">
+                <img src="111.png" alt="Cervezas" title="Cervezas Artesanales">
+                <img src="222.png" alt="Aperitivos" title="Deliciosos Aperitivos">
+                <img src="333.png" alt="Platos Principales" title="Platos Principales">
+                <img src="444.png" alt="Postres" title="Postres Deliciosos">
+                <img src="555.png" alt="Especiales" title="Especiales del Día">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Calabozo Cervecero. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
