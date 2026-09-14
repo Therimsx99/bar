@@ -1,42 +1,102 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Calabozo Cervecero - Menú</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Descubre el menú de El Calabozo Cervecero, donde encontrarás una selección de cervezas y aperitivos deliciosos.">
-    <meta name="keywords" content="cerveza, menú, aperitivos, El Calabozo Cervecero">
+    <title>Menú · El Calabozo Cervecero</title>
+    <meta name="description" content="Menú 2026 de El Calabozo Cervecero: alitas, boneless, hamburguesas, hot dogs, botanas, cervezas, bebidas preparadas y destilados.">
+    <meta name="keywords" content="cerveza, menú, alitas, hamburguesas, destilados, El Calabozo Cervecero">
     <meta name="author" content="El Calabozo Cervecero">
+    <meta name="theme-color" content="#0a0a09">
+    <meta property="og:title" content="Menú · El Calabozo Cervecero">
+    <meta property="og:image" content="img/menu-comida.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Oswald:wght@400;600&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-title">
-            <img src="banner.png" alt="El Calabozo Cervecero">
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html"><img src="img/banner.png" alt="El Calabozo Cervecero" width="1119" height="286"></a>
+            <nav aria-label="Principal">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html" aria-current="page">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section id="menu">
-            <h2>Nuestro Menú</h2>
-            <p>Explora nuestra selección de cervezas y aperitivos cuidadosamente elaborados para complementar tu experiencia en El Calabozo Cervecero.</p>
-            
-            <div class="menu-items">
-                <img src="1111.JPG" alt="Cervezas" title="Cervezas Artesanales">
-                <img src="2222.JPG" alt="Aperitivos" title="Deliciosos Aperitivos">
-                <img src="3333.JPG" alt="Platos Principales" title="Platos Principales">
-                <img src="4444.JPG" alt="Postres" title="Postres Deliciosos">
-                <img src="5555.JPG" alt="Especiales" title="Especiales del Día">
+        <div class="page-head wrap">
+            <span class="eyebrow">Menú 2026</span>
+            <h1 class="section-title">Nuestro menú</h1>
+            <p class="lead">Todos los platillos se preparan al momento, agradecemos su comprensión. Toca el menú para verlo en grande.</p>
+        </div>
+
+        <nav class="chips" aria-label="Secciones del menú">
+            <a href="#comida">Comida</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="menu-calabozo-cervecero-2026.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+        </nav>
+
+        <section class="menu-sheet" id="comida">
+            <div class="wrap">
+                <h2>Comida <small>Pa' empezar · Pa' picar · Pal' antojo · Pal' hambre · Pa' la lombriz</small></h2>
+                <button type="button" class="sheet-frame" data-view="img/menu-comida.jpg" data-alt="Menú de comida de El Calabozo Cervecero">
+                    <picture>
+                        <source srcset="img/menu-comida.webp" type="image/webp">
+                        <img src="img/menu-comida.jpg" alt="Menú de comida: sopas, ensalada, alitas, boneless, botanas, nachos, hot dogs, hamburguesas y postres" width="2600" height="1682">
+                    </picture>
+                    <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>Ampliar</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="wrap"><div class="bars" aria-hidden="true" style="margin-block:30px"></div></div>
+
+        <section class="menu-sheet" id="bebidas">
+            <div class="wrap">
+                <h2>Bebidas <small>Sin alcohol · Preparadas · Cervezas · Destilados</small></h2>
+                <button type="button" class="sheet-frame" data-view="img/menu-bebidas.jpg" data-alt="Menú de bebidas de El Calabozo Cervecero">
+                    <picture>
+                        <source srcset="img/menu-bebidas.webp" type="image/webp">
+                        <img src="img/menu-bebidas.jpg" alt="Menú de bebidas: sin alcohol, preparadas, cervezas, caguamón, mezcal, whisky, tequila, ron, brandy, vodka y vino" width="2600" height="1682" loading="lazy">
+                    </picture>
+                    <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>Ampliar</span>
+                </button>
+
+                <div class="menu-note">
+                    <p>Pregunta por nuestras cervezas artesanales</p>
+                    <a class="btn btn-primary" href="tel:+522222996972">Llamar al 222 299 6972</a>
+                    <a class="btn btn-ghost" href="index.html#promos">Ver promociones</a>
+                </div>
             </div>
         </section>
     </main>
 
-    
+    <footer class="site-footer">
+        <div class="wrap">
+            <img src="img/banner.png" alt="El Calabozo Cervecero" width="1119" height="286" loading="lazy">
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=61554004970518" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></a>
+                <a href="https://www.instagram.com/calabozocervecero1" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            </div>
+            <p>31 Poniente 704 · <a href="tel:+522222996972">222 299 6972</a></p>
+            <p>&copy; <span id="year">2026</span> El Calabozo Cervecero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <dialog class="viewer" id="viewer">
+        <div class="viewer-bar">
+            <button type="button" data-zoom aria-label="Acercar o alejar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg></button>
+            <button type="button" data-close aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+        </div>
+        <div class="viewer-stage"><img src="" alt=""></div>
+    </dialog>
+
+    <script src="main.js"></script>
 </body>
 </html>
-
